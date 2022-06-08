@@ -1,0 +1,50 @@
+{
+    "ques" : [
+     "1. What is the full form of ICT?",
+     "2. In digital technology, translation of information is in _ format.",
+     "3. In analog technology, information is translated into _ pulses of varying amplitude.",
+     "4. These days most of the people uses _ for entertainment and phones for calling.",
+     "5. Which one of the following apps is developed by google?",
+     "6. A tablet is also called as _ .",
+     "7. The process of the computer are:",
+     "8. On the screen of a Smartphone or Tablet, you see a lot of small pictures called _ .",
+     "9. The apps which are already present in your mobile/tablet is called _ apps.",
+     "10. App Store is developed by the company called _ .",
+     "11. _ App is used to make calls (in the book) .",
+     "12. Which one of the following is a web-browser?",
+     "13. Which one of the following is a disadvantage of SmartPhone?",
+     "14. Which company developed BlackBerry OS?",
+     "15. _ button is used to start and shut down a mobile device.",
+     "16. _ button is used to show the options available in a particular app.",
+     "17. _ helps you to listen to voice calls.",
+     "18. _ is a short-range wireless technology which helps you to connect \nwith other devices that are within _ feet",
+     "19. _ method in a mobile is similar to right-clicking a mouse.",
+     "20. What does GPS stand for?"
+     ],
+ 
+     "options" : [
+     ["Instruction and Communication Technology", "Information and Conscious Technology", "Information and Communication Technology", "Induction and Communication Technology"],
+     ["Barcode", "Biometric", "Booting", "Binary"],
+     ["Electricity", "Electric", "Enormous", "Executable"],
+     ["Radio","Televisions","Transmitters","Telephones"],
+     ["Facebook", "Instagram", "Twitter", "Youtube"],
+     ["Large Mobile", "Electronic Notebook", "Mini Computer", "All of the above"],
+     ["Input-Storage-Output", "Input-Compile-Output", "Input-Compress-Output", "Input-Process-Output"],
+     ["Pictures", "Symbols", "Icons", "Figures"],
+     ["System", "Important", "Android", "Default"],
+     ["Apple", "Nokia", "Google", "ASUS"],
+     ["Call", "Ring", "Phone", "Whatsapp"],
+     ["Google", "Chrome", "Chromium", "Bing"],
+     ["Playing a game is difficult", "Cannot talk to people", "Watching movies is difficult", "All of the above"],
+      ["BlackBerry.co", "BlackBerry Corporation", "BlackBerry Limited", "BlackBerry.org"],
+      ["Power button", "Shut-down button", "Power-off button", "All of the above"],
+      ["Help button", "Show-options button", "Navigate button", "None of these"],
+      ["Earpiece", "Speaker", "Bass", "Hearer"],
+      ["Bluetooth/20", "Bluetooth/10", "Bluetooth/30", "Bluetooth/40"],
+      ["Tap", "Pinch in", "Swipe", "Tap and hold"],
+      ["Global Payment System", "Global Positioning System", "Global Program System", "Global Pointing System"]
+     ],
+ 
+     "ans" : [ 3, 4, 2, 2, 4, 3, 4, 3, 4, 1, 3, 2, 3, 3, 1, 4, 1, 3, 4, 2]
+ 
+ }
