@@ -21,12 +21,6 @@ q = (obj['ques'])
 options = (obj['options'])
 a = (obj['ans'])
 
-p1 = PhotoImage(file='3.png')
-root.iconphoto(False, p1)
-
-Grid.columnconfigure(root, 0, weight=1)
-Grid.rowconfigure(root, 0, weight=1)
-
 class Quiz:
     def __init__(self):
         self.qn = 0
@@ -52,22 +46,22 @@ class Quiz:
 Radio buttons are buttons that we choose as the correct option, in this case: the answer.
 They play a very important role in this quiz as they help us select the correct answers, rather than 
 us typing the correct answer and getting the spelling wrong.
-    
+
 First, set a value to the radio button, in this case, its 0.
 Then set the value for the boxes as an empty list.
 The set the y position of the radio buttons as 150.
-    
+
     while value < 4:
         button = SetRadioButton(root, text=" ", variable = self.option_selected, value = value + 1, font=("times", 14))
         b.append(btn)
         btn.place(x=100, y=yp)
         Add the y position of the radio button upto 40, in this case: yp += 40
-        
+
     return the value of "b"
     return b
-    
-    
-    
+
+
+
     """
 
     def radiobtns(self):
@@ -137,6 +131,7 @@ The set the y position of the radio buttons as 150.
         correct = "No. of correct answers: " + str(self.correct)
         wrong = "No. of wrong answers: " + str(wc)
         mb.showinfo("Result", "\n".join([result, correct, wrong]))
+
 
 quiz = Quiz()
 root.mainloop()
