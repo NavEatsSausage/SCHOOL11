@@ -8,7 +8,7 @@
 
 from tkinter import *
 from tkinter import messagebox as mb
-from tkinter.messagebox import askyesno
+from tkinter.messagebox import askyesno, askokcancel
 import json
 
 root = Tk()
@@ -32,11 +32,11 @@ class Quiz:
         self.correct = 0
 
     def question(self, qn):
-        t = Label(root, text="Quiz in ICT Skills", width=50, bg="blue", fg="white", font=("times", 20, "bold"))
+        t = Label(root, text="Quiz in ICT Skills", width=50, bg="blue", fg="white", font=("Arial", 20, "bold"))
         t.place(x=0, y=2)
         fsdis = Label(root, text="Fullscreen-disabled", font=("times", 10))
         fsdis.place(x=0, y=470)
-        navmsg = Label(root, text="-Made by Navaneeth", font=("times", 10, "bold"))
+        navmsg = Label(root, text="-Made by Navaneeth", font=("times", 10))
         navmsg.place(x=670, y=470)
         qn = Label(root, text=q[qn], width=60, font=("times", 15, "bold"), anchor="w")
         qn.place(x=70, y=100)
@@ -60,8 +60,6 @@ The set the y position of the radio buttons as 150.
     return the value of "b"
     return b
 
-
-
     """
 
     def radiobtns(self):
@@ -69,11 +67,11 @@ The set the y position of the radio buttons as 150.
         b = []
         yp = 150
         while val < 4:
-            btn = Radiobutton(root, text=" ", variable=self.opt_selected, value=val + 1, font=("times", 14))
+            btn = Radiobutton(root, text=" ", variable=self.opt_selected, value=val + 1, font=("comicsansms", 14))
             b.append(btn)
             btn.place(x=100, y=yp)
             val += 1
-            yp += 40
+            yp += 50
         return b
 
     def display_options(self, qn):
@@ -96,7 +94,8 @@ The set the y position of the radio buttons as 150.
         backbutton.place(x=100, y=380)
 
     def confirm(self):
-        answer = askyesno(title='Warning!', message='Are you sure that you want to quit?')
+        answer = askyesno(title='Warning!', message='Are you sure that you want to quit? \n'
+                                                    '(Tip: Answer all the questions before quitting.)')
         if answer:
             root.quit()
 
@@ -104,12 +103,9 @@ The set the y position of the radio buttons as 150.
         if self.opt_selected.get() == a[qn]:
             return True
 
-    def backbtn(self, qn, val):
+    def backbtn(self):
         if self.qn >= 1:
             self.qn -= 1
-        for op in options[qn]:
-            self.opts[val]['text'] = op
-            val += 1
         if self.qn == len(q):
             self.display_result()
         else:
@@ -131,7 +127,6 @@ The set the y position of the radio buttons as 150.
         correct = "No. of correct answers: " + str(self.correct)
         wrong = "No. of wrong answers: " + str(wc)
         mb.showinfo("Result", "\n".join([result, correct, wrong]))
-
 
 quiz = Quiz()
 root.mainloop()
